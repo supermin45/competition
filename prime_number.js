@@ -14,7 +14,7 @@
     }
     
     function get_result(arr) {
-        let str = ' ';
+        let str = '';
         for (let i in arr) {
             str += arr[i];
         }
@@ -23,4 +23,4 @@
     
     let num = 90;
     let string = prime_number(num);
-    console.log(num + '=' + string);
+    console.log(num + '=' +string);

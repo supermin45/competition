@@ -8,7 +8,7 @@ function chain(str, cal) {
     for (let i = 0; i < arr.length - 1; i++) {
         result += arr[i] + '->';
     }
-    result += '5';
+    result += arr[arr.length-1];
     return result;
 }
 function splitStr(str, cal) {

@@ -2,25 +2,17 @@
  * Created by Administrator on 2017/8/11.
  * 题目：给出链表 1->2->3->3->4->5->3, 和 val = 3, 你需要返回删除3之后的链表：1->2->4->5。g
  */
-function chain(str, cal) {
-    let arr = splitStr(str, cal);
-    let result = '';
-    for (let i = 0; i < arr.length - 1; i++) {
-        result += arr[i] + '->';
-    }
-    result += arr[arr.length-1];
-    return result;
-}
-function splitStr(str, cal) {
+function fromChainDeleteVal(str, val) {
+    let result = [];
     var arr = str.split('->');
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === cal) {
-            arr.splice(i, 1);
-            i--;
+        if (arr[i] !== (''+val)) {
+            result.push(arr[i]);
         }
     }
-    return arr;
+    result =  result.join('->');
+    return result;
 }
 let str = '1->2->3->3->4->5->3';
-let cal = "3";
-console.log(chain(str, cal));
+let val = 3;
+console.log(fromChainDeleteVal(str, val));

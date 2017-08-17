@@ -4,11 +4,10 @@
  例如：arr = [5, 3, 7, 1]; 输出：[25, 9, 49, 1]
  要求：不要使用for，while循环
  */
-
-function getItemSquare(arr) {
+function getArrItemSquare(arr) {
     return arr.map((e) => {
-            return Math.pow(e, 2);
-    });
+        return Math.pow(e, 2);
+        });
 }
 const arr = [5, 3, 7, 1];
-console.log(arr + '中元素的平方为：' + getItemSquare(arr));
+console.log(arr + "中元素的平方为：" + getItemSquare(arr));

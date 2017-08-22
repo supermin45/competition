@@ -6,17 +6,7 @@
  例如：nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2, 2].
  */
 function findIntersection (nums1, nums2) {
-    let result = [];
-
-    nums1.forEach(a => {
-        if (nums2.includes(a)) {
-            result.push(a);
-        }
-    });
-    let intersection = [];
-    intersection.push(result[0]);
-    intersection.push(result[result.length -1]);
-    return intersection;
+    return nums1.filter(e => e === nums2[0] || e === nums2[nums2.length -1]);
 }
 const nums1 = [1, 2, 2, 1];
 const nums2 = [2, 2];

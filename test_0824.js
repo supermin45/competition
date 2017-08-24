@@ -16,9 +16,10 @@ function leftPad(str, length, subStr) {
     result.forEach(a => {
         string += a;
         });
+
     return string;
 }
 const str = "hello";
 const length = 20;
 const subStr = "1";
-console.log(`'${str}'拼接'${subStr}'后的字符串为'${leftPad(str, length, subStr)}'`);
+console.log(`'${str}'拼接'${subStr}后的字符串为'${leftPad(str, length, subStr)}'`);

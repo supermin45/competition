@@ -8,21 +8,6 @@
  …
  26-> ‘Z’
  */
-// var readline = require('readline');
-// const r1 = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-// var data = [];
-// var n = 0;
-// r1.on('line', function (ans) {
-//     data.push(parseInt(ans, 16));
-//
-//     if (data.length === n + 1) {
-//         decodeNumber(data);
-//         data = [];
-//     }
-// });
 function decodeNumber(num) {
     let obj = {number: num, result: '', count: 0};
 
